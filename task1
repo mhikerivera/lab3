@@ -1,0 +1,19 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+vectA =  np.array([3,6])
+vectB =  np.array([-4,2])
+
+A = np.arange(-6,6,0.5)
+B = np.arange(-8,8,0.75)
+
+plt.scatter(A*vectA[0],A*vectA[1],s=12, alpha=0.5, color='red')
+plt.scatter(B*vectB[0],B*vectB[1],s=12, alpha=0.5, color='blue')
+
+
+plt.xlim(-35,35)
+plt.ylim(-35,35)
+plt.axhline(y=0, color='k')
+plt.axvline(x=0, color='k')
+plt.grid()
+plt.show()
